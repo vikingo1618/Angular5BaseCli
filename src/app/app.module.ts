@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { AppComponent, routes } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { RouterModule } from '@angular/router';
-import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule,
         MatSidenavModule,
@@ -12,6 +11,9 @@ import { MatToolbarModule,
         MatIconModule,
         MatInputModule,
         MatProgressBarModule } from '@angular/material';
+
+import { APP_PROVIDERS } from './app.providers';
+import { MainComponent } from './main/main.component';
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -35,7 +37,7 @@ export const MATERIAL_COMPONENTS = [
     MATERIAL_COMPONENTS,
     RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [APP_PROVIDERS],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
