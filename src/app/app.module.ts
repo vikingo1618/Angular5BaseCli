@@ -5,6 +5,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 import { MatToolbarModule,
         MatSidenavModule,
         MatButtonModule,
@@ -41,6 +42,7 @@ export const MATERIAL_COMPONENTS = [
     HttpClientModule,
     BrowserAnimationsModule,
     MATERIAL_COMPONENTS,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [APP_PROVIDERS],
