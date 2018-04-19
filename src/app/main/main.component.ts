@@ -34,4 +34,10 @@ export class MainComponent implements OnInit {
 
   }
 
+  deleteCard(obj:GitHubModel){
+    console.log(obj);
+    this.gitHubDataList=this.gitHubDataList.filter(x=>x!=obj);
+
+  }
+
 }

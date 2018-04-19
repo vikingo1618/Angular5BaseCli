@@ -20,6 +20,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { GitHubComponent } from './git-hub-card/git-hub-card.component';
 import {SearchUserComponent  } from "./search-user/search-user.component";
+import { ReactivoComponent } from './reactivo/reactivo.component';
+import { PasivoComponent } from './pasivo/pasivo.component';
 
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
@@ -38,7 +40,9 @@ export const MATERIAL_COMPONENTS = [
     AboutComponent,
     ContactComponent,
     GitHubComponent,
-    SearchUserComponent
+    SearchUserComponent,
+    ReactivoComponent,
+    PasivoComponent
   ],
   imports: [
     BrowserModule,
