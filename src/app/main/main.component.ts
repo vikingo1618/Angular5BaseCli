@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GitHubService } from '../services/git-hub.service';
 
 @Component({
   selector: 'app-main',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _gitHubService : GitHubService) { 
+
+
+  }
 
   ngOnInit() {
+
+    this._gitHubService
+      .getUserInfo('vikingo1618')
+      .subscribe(x => {console.log(x)});
+
   }
 
 }
