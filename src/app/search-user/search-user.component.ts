@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnInit, OnDestroy, Output, EventEmitter} from "@angular/core";
 
 @Component({
     selector: 'app-search-user',
@@ -6,7 +6,8 @@ import { Component, OnInit, OnDestroy } from "@angular/core";
     styleUrls: ['./search-user.component.css']
 })
 export class SearchUserComponent implements OnInit, OnDestroy {
-    
+
+    @Output() onSearchUser = new EventEmitter<string>();
     userName: string;
     constructor(){
 
@@ -20,6 +21,6 @@ export class SearchUserComponent implements OnInit, OnDestroy {
     }
 
     onSearchClick(){
-        console.log('Click '+ this.userName);
+        this.onSearchUser.emit(this.userName);
     }
 }
