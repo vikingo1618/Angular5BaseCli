@@ -1,5 +1,9 @@
-<div>
-    <div>User:<input id="user" type="text" /></div>
-    <div>Password:<input id="pass" type="text" /></div>Password:<input id="pass" type="text" />
-    <div><button (click) = "verifyLogin()">Accesar</button></div>
+<div class="login-card" align=center>
+    <div class="login-card">
+        User
+        <input type="text" [(ngModel)] = "user" placeholder="user"/><br>
+        Password
+        <input type="password" [(ngModel)] = "password" placeholder="pass"/><br>
+        <button (click) = "verifyLogin()">Acceso</button>
+    </div>
 </div>

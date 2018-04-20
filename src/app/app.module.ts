@@ -24,6 +24,7 @@ import { ReactivoComponent } from './reactivo/reactivo.component';
 import { PasivoComponent } from './pasivo/pasivo.component';
 import { LoginComponent } from "./login-screen/login.component";
 
+
 export const MATERIAL_COMPONENTS = [
   MatToolbarModule,
   MatSidenavModule,
