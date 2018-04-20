@@ -11,7 +11,9 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-  changeColor(){
- 
+  
+  verifyLogin(){
+    private _user: string;
+    //llamar servicio.login
   }
 }
